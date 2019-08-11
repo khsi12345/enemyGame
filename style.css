@@ -1,0 +1,43 @@
+/* 
+Old한 방법
+html, body {
+    height: 100%;
+}
+
+#bg는 div요소로 컨텐츠(자식)가 없으면 뷰에 보이지 않는다.
+  디폴트로 width: auto;(요소의 부모 크기를 기준으로 자동 설정) height: auto;(요소의 자식 크기 기준으로 자동 설정) 되어있다.
+  
+#bg {
+    background-image: url("./images/bg.png");
+    height: 100%; 부모의 height 값에 100%
+} */
+
+#bg {
+    position: relative;
+    background-image: url("./images/bg.png");
+    margin: auto auto;
+    margin-top: 12%;
+    width: 800px;
+    height: 600px;
+}
+
+#hero {
+    display: inline-block;
+    background-image: url("./images/hero.png");
+    width: 35px;
+    height: 54px;
+    background-position-x: 140px;
+    position: absolute;
+    top: 546px;
+    left: 400px;
+    right: 400px;
+}
+
+#enemy {
+    display: inline-block;
+    width: 40px;
+    height: 54px;
+    background-image: url("./images/enemy.png");
+    position: absolute;
+
+}
